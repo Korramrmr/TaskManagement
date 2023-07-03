@@ -1,0 +1,88 @@
+@import '@/styles/buttons.scss';
+@import '@/styles/variables.scss';
+.navbar {
+  padding: 23px;
+  background-color: $primary-color;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-width: 1024px;
+}
+
+.navbar__list {
+  display: flex;
+  margin-right: 21px;
+
+  & > .navbar__list-button:not(:first-child) {
+    margin-left: 21px;
+  }
+}
+
+.btn {
+  @extend .btn;
+}
+
+.navbar-btn.active {
+  background-color: $color-hover;
+  color: $primary-font-color;
+}
+
+.navbar__profile {
+  display: flex;
+  align-items: center;
+  padding: 9px 16px;
+  cursor: pointer;
+}
+
+.navbar__profile_avatar {
+  margin-right: 14px;
+  border-radius: $user-avatar-radius;
+  width: 24px;
+  height: 24px;
+}
+
+.navbar__profile_arrow {
+  color: #fff;
+  background-color: transparent;
+  border: none;
+}
+
+.arrow-btn {
+  width: 24px;
+  height: 24px;
+  color: #fff;
+}
+
+.profile-active {
+  background-color: #fff;
+  color: $primary-font-color;
+  border-radius: 4px;
+}
+
+.navbar__drop {
+  padding: 16px;
+  background-color: #fff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  right: 16px;
+  top: 65px;
+  z-index: 1;
+}
+
+.navbar__link {
+  cursor: pointer;
+  display: block;
+
+  & + & {
+    margin-top: 16px;
+  }
+}
+
+.user-button__icon {
+  transition: transform 0.3s ease;
+}
+
+.rotate-up {
+  color: $font-color-non-active;
+  transform: rotate(180deg);
+}

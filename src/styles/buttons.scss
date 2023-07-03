@@ -1,0 +1,75 @@
+@import "base.scss";
+@import "variables.scss";
+.btn {
+  font-size: 14px;
+  font-weight: 400;
+  height: auto;
+  background-color: $primary-color;
+  cursor: pointer;
+  color: $color-hover;
+  padding: 11px 16px;
+  border: 1px solid $color-hover;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: $color-hover;
+    color: $primary-font-color;
+  }
+}
+
+.btn__icon_dots {
+  padding: 0;
+  width: 42px;
+  height: 42px;
+  border: 1px solid $border-color-default;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #fff;
+
+  &:hover {
+    background-color: #fff;
+  }
+
+  &:active {
+    background-color: #fff;
+    border-color: $border-color-active;
+  }
+}
+
+.menu-dots {
+  height: 26px;
+  width: 26px;
+}
+
+
+.btn-drop {
+  padding: 16px;
+  background-color: #fff;
+  box-shadow: $shadow-color;
+  position: absolute;
+  right: 15px;
+  top: 53px;
+  z-index: 1;
+}
+
+.btn-drop-link + .btn-drop-link {
+  margin-top: 16px;
+}
+
+.btn-drop-link:nth-child(1) {
+  padding-bottom: 9px;
+}
+
+.link-red {
+  color: $font-color-error;
+}
+
+.btn-drop-link {
+  display: block;
+}
+
+.dots-svg {
+  height: 24px;
+  width: 24px;
+  color: #000;
+}

@@ -1,0 +1,60 @@
+@import '@/styles/base.scss';
+@import '@/styles/buttons.scss';
+@import '@/styles/variables.scss';
+
+.project-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 32px;
+  min-width: 1024px;
+  border-bottom: 1px solid $border-color-active;
+  padding: 0 16px 8px;
+  cursor: pointer;
+  position: relative;
+
+  &:hover {
+    .project-item__btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.project-item__btn {
+  display: none;
+}
+
+.project-item__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60px;
+  flex-grow: 2;
+  margin-right: 16px;
+}
+
+.project-item__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.project-item__id {
+  margin-right: $margin-right-text;
+}
+
+.project-btn-active {
+  background-color: $hover-secondary;
+  border-color: $border-color-active;
+  display: block;
+}
+
+.project-item__about {
+  display: flex;
+}
+
+.project-item__create,
+.project-item__editor {
+  color: $font-color-non-active;
+}

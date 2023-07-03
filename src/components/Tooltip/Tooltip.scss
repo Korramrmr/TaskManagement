@@ -1,0 +1,19 @@
+@import "@/styles/base.scss";
+@import "@/styles/variables.scss";
+
+.tooltip {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border: 1px solid $border-color-default;
+  box-shadow: $shadow-color;
+  border-radius: 4px;
+  padding: 16px;
+  white-space: normal;
+  z-index: 9999;
+  width: 400px;
+  white-space: normal;
+  overflow: visible;
+}

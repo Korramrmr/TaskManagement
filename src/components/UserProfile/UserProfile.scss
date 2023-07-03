@@ -1,0 +1,41 @@
+.profile {
+  display: flex;
+  padding: 24px;
+  .profile-image {
+    padding: 12px 10px;
+  }
+  .profile-info {
+    padding-left: 24px;
+    &__top {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 33px;
+      .setting-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 42px;
+        height: 42px;
+        svg {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+    &__about {
+      div {
+        color: #8e8e8e;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 8px;
+      }
+      p {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+}
